@@ -1,17 +1,24 @@
 "use strict";
+
+/* -------------------------------------------------------
+	EXPRESS - BLOG API
+------------------------------------------------------- */
+
 //* $npm i swagger-autogen
 // Swagger-UI:
 // *npm i swagger-ui-express
 // Redoc:
 //* npm i redoc-express
-
-const swaggerAutogen = require("swagger-autogen")();
-
-const packageJson = require("./package.json");
+/* ------------------------------------------------------- */
 
 require("dotenv").config();
 const HOST = process.env?.HOST || "127.0.0.1";
 const PORT = process.env?.PORT || 8000;
+
+/* ------------------------------------------------------- */
+const swaggerAutogen = require("swagger-autogen")();
+const packageJson = require("./package.json");
+
 
 const document = {
     info: {
@@ -34,7 +41,7 @@ const document = {
             in: "header",
             name: "Authorization",
             description:
-                "SimpleToken Auth * Example: <b>Token <i>...tokenKey...<i></b>",
+                "Simple Token Auth * Example: <b>Token <i>...tokenKey...<i></b>",
         },
     },
     security: [{ Token: true }],
@@ -53,6 +60,5 @@ const outputFile = "./src/configs/swagger.json";
 
 
 
-
-
+// Create JSON file:
 swaggerAutogen(outputFile, routes, document);
