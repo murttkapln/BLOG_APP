@@ -22,7 +22,7 @@
       "type": "apiKey",
       "in": "header",
       "name": "Authorization",
-      "description": "SimpleToken Auth * Example: <b>Token <i>...tokenKey...<i></b>"
+      "description": "Simple Token Auth * Example: <b>Token <i>...tokenKey...<i></b>"
     }
   },
   "consumes": [
