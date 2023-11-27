@@ -33,7 +33,7 @@ app.use(require('cors')(
   ))
 app.use(require("./src/middlewares/findSearchSortPage"));
 app.use(require('./src/middlewares/authentication'))
-app.use(require('./src/middlewares/loger'))
+// app.use(require('./src/middlewares/loger'))
 /* ------------------------------------------------------------------------- */
 // ROUTES:
 app.use(require("./src/routes"));
