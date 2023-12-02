@@ -4,7 +4,7 @@ services:
 
     client:
         # container_name: frontend (default: keyName)
-        image: docker-compose-client
+        image: murttkapln/docker-compose-client
         build: ./client
         ports:
             # dış/iç port numaraları
@@ -14,10 +14,11 @@ services:
         restart: on-failure # hata anında tekrar çalıştır.
         depends_on:
             # önce aşağıdakileri çalıştır.
-            - server # aşağıda tanımlandı.
+            # aşağıda tanımlandı.
+            - server 
 
     server:
-        image: docker-compose-server
+        image: murttkapln/docker-compose-server
         build: ./server
         ports:
             - 8000:8000
