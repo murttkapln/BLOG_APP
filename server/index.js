@@ -32,6 +32,10 @@ app.use(
   require("cors")()
   // {origin: ["http://localhost:3000", "http://localhost:4173", "http://localhost:5173"]}
 );
+
+// Call static uploadFile:
+app.use("/upload", express.static("./upload"));
+
 app.use(require("./src/middlewares/findSearchSortPage"));
 app.use(require("./src/middlewares/authentication"));
 // app.use(require('./src/middlewares/loger'))
