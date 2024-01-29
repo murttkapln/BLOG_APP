@@ -56,7 +56,7 @@ const document = {
     },
 };
 const routes = ["./index.js"];
-const outputFile = "./src/configs/swagger.json";
+const outputFile = "./var/task/src/configs/swagger.json";
 
 
 
