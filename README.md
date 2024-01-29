@@ -125,8 +125,3 @@ Blog App (folder)
 |
 └── README.md
 ```
-=======
-# MernStack_Blog-App
-Blog App - connected to database and has CRUD functionalities 
-#Link ![https://blog-app-mk.vercel.app]
->>>>>>> fa8a615f5cb3b8f150a0e02b490bd97760effe5b
