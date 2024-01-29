@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div id="user-content-toc">
   <ul align="left">
     <summary><h1 style="display: inline-block">Mern Stack Blog App</h1></summary>
@@ -124,3 +125,8 @@ Blog App (folder)
 |
 └── README.md
 ```
+=======
+# MernStack_Blog-App
+Blog App - connected to database and has CRUD functionalities 
+#Link ![https://blog-app-mk.vercel.app]
+>>>>>>> fa8a615f5cb3b8f150a0e02b490bd97760effe5b
